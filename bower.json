@@ -1,0 +1,22 @@
+{
+  "name": "rank",
+  "version": "0.0.0",
+  "authors": [
+    "cesar <cesar@romero.ws>"
+  ],
+  "description": "ranking options",
+  "keywords": [
+    "ranking",
+    "shultze",
+    "prioritizing"
+  ],
+  "license": "MIT",
+  "homepage": "cesar.romero.ws",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
