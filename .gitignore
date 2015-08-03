@@ -1,2 +1,4 @@
 .virtualenv
-static/bower_components/
+bower_components
+static/bower_components
+static/templates

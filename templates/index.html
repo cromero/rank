@@ -6,7 +6,14 @@
     </title>
     <link href="/static/bower_components/skeleton-css/css/skeleton.css" rel="stylesheet">
   </head>
-  <body>
-    <p>Rank stuff here!</p>
+  <body ng-app="ranker">
+    <div class="container">
+      <div class="row">
+          <h1>Rank</h1>
+      </div>
+      <div ng-include="'/static/templates/create.html'"></div>
+    </div>
+    <script src="/static/bower_components/angular/angular.min.js"></script>
+    <script src="/static/js/rank.js"></script>
   </body>
 </html>
