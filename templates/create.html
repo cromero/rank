@@ -1,10 +1,19 @@
-<div class="container">
+<div class="container" ng-controller="listCreationCtrl">
   <form>
     <div class="row">
       <div class="eleven columns">
       <label for="item-input">Enter one item</label>
-      <input class="u-full-width" type="text" placeholder="foo" id="item-input"/>
+      <input class="u-full-width" type="text" placeholder="foo" id="item-input"
+             ng-keypress="add($event)" ng-model="newCandidate"/>
       </div>
     </div>
   </form>
+  <p ng-show="!candidates.length">
+    This list is empty. Start typing to add candidates to this list.
+  </p>
+  <ul ng-show="candidates.length">
+    <li ng-repeat="candidate in candidates">
+      {{candidate.name}}
+    </li>
+  </ul>
 </div>
